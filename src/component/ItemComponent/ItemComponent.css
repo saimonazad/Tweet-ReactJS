@@ -1,0 +1,23 @@
+.content {
+}
+.item {
+  position: relative;
+  padding: 15px;
+}
+.avatar {
+  position: absolute;
+}
+.avatar img {
+  border-radius: 50px;
+  border: 3px solid ash;
+}
+.time {
+  padding-left: 40px;
+  font-size: 11px;
+}
+.item p {
+  font-size: 13px;
+  line-height: 12px;
+  margin-top: 0px;
+  margin-left: 40px;
+}
