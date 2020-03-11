@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./ClockComponent.css";
 
 export default class ClockComponent extends Component {
   constructor(props) {

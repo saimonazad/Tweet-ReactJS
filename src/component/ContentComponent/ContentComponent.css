@@ -1,6 +1,11 @@
 .item {
   position: relative;
-  padding: 8px 15px;
+  margin: 8px 15px;
+  padding: 8px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 4px 0 rgba(17, 22, 26, 0.16),
+    0 2px 4px 0 rgba(17, 22, 26, 0.08), 0 4px 8px 0 rgba(17, 22, 26, 0.08);
 }
 .avatar {
   position: absolute;
@@ -13,6 +18,7 @@
   padding-left: 40px;
   font-size: 11px;
   top: 00px;
+  color: grey;
 }
 .item p {
   font-size: 13px;
