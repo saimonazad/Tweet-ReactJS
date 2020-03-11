@@ -3,15 +3,15 @@ import ReactDOM from "react-dom";
 
 import "./NavComponent.css";
 
-export default function NavComponent() {
+export default function NavComponent(props) {
   return (
     <div className="notificationsFrame">
       <div className="titleBar">
         <div className="row">
           <div className="menuIcon">
-            <i class="fas fa-bars" />
+            <i className="fas fa-bars" />
           </div>
-          <span className="title">Timeline</span>
+          <span className="title">{props.title}</span>
           <div className="searchIcon">
             <i class="fas fa-search" />
           </div>
