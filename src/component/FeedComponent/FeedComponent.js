@@ -1,5 +1,6 @@
 import React from "react";
 import "./FeedComponent.css";
+import LikeComponent from "../LikeComponent/LikeComponent";
 
 export default class FeedComponent extends React.Component {
   render() {
@@ -9,8 +10,9 @@ export default class FeedComponent extends React.Component {
         <div className="avatar">
           <img src={activity.user.avatar} width="30" height="30" alt="" />
         </div>
-        <span className="time">{activity.timestamp}</span>
+        <span className="time">{moment(activity.timestamp).fromNow()}</span>
         <p>{activity.text}</p>
+        <LikeComponent like={activity.love} />
       </div>
     );
   }
