@@ -1,6 +1,7 @@
 import React from "react";
 import "./FeedComponent.css";
 import LikeComponent from "../LikeComponent/LikeComponent";
+import moment from 'moment';
 
 export default class FeedComponent extends React.Component {
   render() {
