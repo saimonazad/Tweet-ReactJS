@@ -3,17 +3,25 @@ import "./LikeComponent.css";
 
 class LikeComponent extends Component {
   state = {
-    likes: this.props.like
+    isLoved: this.props.like
   };
 
-  addLike = () => {
-    const newLikes = this.state.likes + 1;
-    this.setState({ likes: newLikes });
+  loveReactHandler = () => {
+    const loveStatus = !this.state.isLoved;
+    this.setState({ isLoved: loveStatus });
   };
 
   render() {
+    let heart = "far fa-heart";
+
+    if (this.state.isLoved) {
+      heart = "fas fa-heart heart-red";
+    }
+
     return (
-      <button onClick={this.addLike.bind(this)}>Love {this.state.likes}</button>
+      <div>
+        <i class={heart} onClick={this.loveReactHandler.bind(this)} />
+      </div>
     );
   }
 }

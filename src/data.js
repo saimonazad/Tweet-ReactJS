@@ -2,7 +2,7 @@ const data = [
   {
     timestamp: new Date().getTime(),
     text: "Ate my dinner",
-    love: 0,
+    love: false,
     user: {
       id: 1,
       name: "Nate",
@@ -13,7 +13,7 @@ const data = [
   {
     timestamp: new Date().getTime(),
     text: "Hello World!!",
-    love: 3,
+    love: false,
     user: {
       id: 2,
       name: "Azad",
